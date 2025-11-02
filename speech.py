@@ -50,8 +50,7 @@ class speech_to_text():
         lem = WordNetLemmatizer()
         stem = PorterStemmer()
         stop_words = set(stopwords.words("english"))
-        new_words = ["hey", "hi", "hello", "what's up", "i", "please", "help", "using", "show", "result", "large",
-                     "also", "iv", "one", "two", "new", "previously", "shown"]
+        new_words = ["hey", "hi", "hello", "what's up", "i", "please", "help", "using", "show", "result", "large", "so" , "uh", "um", "can you", "also", "iv", "one", "two", "new", "previously", "shown"]
         stop_words = stop_words.union(new_words) - {"whom", "who"}
         text = text.lower()
         text = text.split()
