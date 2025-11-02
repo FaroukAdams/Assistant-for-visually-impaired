@@ -14,10 +14,12 @@ def getBrightness(cam):
         return ("Very bright", avg)
     if(avg > 0.4):
         return ("Bright", avg)
+    if(avg > 0.3):
+      	return ("Moderate", avg) 
     if(avg>0.2):
         return ("Dim", avg)
     else:
-        return ("Dark",avg)
+        return ("Dark. Be careful as visibility is poor.",avg)
 
 
 def play_file(fname):
